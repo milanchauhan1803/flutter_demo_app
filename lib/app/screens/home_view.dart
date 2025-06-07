@@ -8,7 +8,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepOrange,
-      body: SafeArea(child: CalculatorView()),
+      body: SafeArea(bottom: true, child: CalculatorView()),
     );
   }
 }
