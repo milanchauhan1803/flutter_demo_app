@@ -15,37 +15,64 @@ class _CalculatorViewState extends State<CalculatorView> {
   TextEditingController firstValueController = TextEditingController();
   TextEditingController secondValueController = TextEditingController();
 
+  late final AppLifecycleListener _listener;
+
   @override
   void initState() {
     super.initState();
     firstValueController.text = x.toString();
     secondValueController.text = y.toString();
+    _listener = AppLifecycleListener(
+      onShow: _onShow,
+      onHide: _onHide,
+      onPause: _onPause,
+      onResume: _onResume,
+      onRestart: _onRestart,
+      onStateChange: _onStateChanged,
+      onDetach: _onDetach,
+    );
   }
 
+  void _onShow() => print("On show called");
+
+  void _onHide() => print("On hide called");
+
+  void _onPause() => print("On pause called");
+
+  void _onResume() => print("On resume called");
+
+  void _onRestart() => print("On restart called");
+
+  void _onStateChanged(AppLifecycleState state) =>
+      print("On state changed State called $state");
+
+  void _onDetach() => print("On detach called");
   @override
   void dispose() {
     super.dispose();
     firstValueController.dispose();
     secondValueController.dispose();
+    _listener.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        calculatorDisplay(
-          context: context,
+        CalculatorDisplay(
+          key: Key("DisplayOne"),
           controller: firstValueController,
           hintText: "Please first number value",
         ),
         SizedBox(height: 10),
-        calculatorDisplay(
-          context: context,
+        CalculatorDisplay(
+          key: Key("DisplayTwo"),
           controller: secondValueController,
           hintText: "Please second number value",
         ),
         SizedBox(height: 20),
         Text(
+          key: Key("Result"),
           z.toString(),
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
@@ -121,12 +148,16 @@ class _CalculatorViewState extends State<CalculatorView> {
       ],
     );
   }
+}
 
-  Widget calculatorDisplay({
-    required BuildContext context,
-    required TextEditingController controller,
-    required String hintText,
-  }) {
+class CalculatorDisplay extends StatelessWidget {
+  final String? hintText;
+  final TextEditingController controller;
+
+  const CalculatorDisplay({super.key, this.hintText, required this.controller});
+
+  @override
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 32.0),
       child: TextFormField(
@@ -140,7 +171,7 @@ class _CalculatorViewState extends State<CalculatorView> {
             borderRadius: BorderRadius.all(Radius.circular(15)),
             borderSide: BorderSide(color: Colors.black),
           ),
-          hintText: hintText.isEmpty ? "Enter a number" : hintText,
+          hintText: hintText!.isEmpty ? "Enter a number" : hintText,
         ),
       ),
     );
