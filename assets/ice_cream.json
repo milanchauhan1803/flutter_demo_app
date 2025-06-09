@@ -1,82 +1,88 @@
 {
-  "iceCreams":[
-  {
-    "id": 1,
-    "name": "Vanilla Dream",
-    "price": 80,
-    "flavor": "Vanilla",
-    "image": "https://unsplash.com/photos/a-bowl-of-ice-cream-and-cookies-on-a-table-p6-O0Cc5RAc",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Sugar", "quantity": "50g" },
-      { "name": "Vanilla Extract", "quantity": "1 tsp" },
-      { "name": "Cream", "quantity": "100ml" }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Chocolate Blast",
-    "price": 100,
-    "flavor": "Chocolate",
-    "image": "https://unsplash.com/photos/a-scoop-of-chocolate-ice-cream-with-a-spoon-in-it-srRNSezNfO4",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Sugar", "quantity": "60g" },
-      { "name": "Cocoa Powder", "quantity": "2 tbsp" },
-      { "name": "Chocolate Chips", "quantity": "30g" }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Strawberry Swirl",
-    "price": 90,
-    "flavor": "Strawberry",
-    "image": "https://unsplash.com/photos/a-cup-of-ice-cream-with-strawberries-on-the-side-JK5DX2McMMc",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Strawberry Puree", "quantity": "80g" },
-      { "name": "Sugar", "quantity": "40g" },
-      { "name": "Cream", "quantity": "100ml" }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Mango Mania",
-    "price": 95,
-    "flavor": "Mango",
-    "image": "https://unsplash.com/photos/a-bowl-of-food-yyTYtdSMUaQ",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Mango Pulp", "quantity": "100g" },
-      { "name": "Sugar", "quantity": "50g" },
-      { "name": "Cream", "quantity": "90ml" }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Butterscotch Crunch",
-    "price": 110,
-    "flavor": "Butterscotch",
-    "image": "https://unsplash.com/photos/bowl-of-ice-cream-iT4qcNMhYTQ",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Sugar", "quantity": "55g" },
-      { "name": "Butterscotch Chips", "quantity": "40g" },
-      { "name": "Caramel", "quantity": "30ml" }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Blueberry Bliss",
-    "price": 105,
-    "flavor": "Blueberry",
-    "image": "https://unsplash.com/photos/a-bowl-of-ice-cream-with-berries-and-blueberries-DOxN-a4fqBQ",
-    "ingredients": [
-      { "name": "Milk", "quantity": "200ml" },
-      { "name": "Blueberry Puree", "quantity": "75g" },
-      { "name": "Sugar", "quantity": "45g" },
-      { "name": "Cream", "quantity": "95ml" }
-    ]
-  }
-]
+  "iceCreams": [
+    {
+      "id": 1,
+      "name": "Vanilla Dream",
+      "price": 80,
+      "flavor": "Vanilla",
+      "image": "https://images.unsplash.com/photo-1708782343454-5d66dda6e107?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Sugar", "quantity": "50g" },
+        { "name": "Vanilla Extract", "quantity": "1 tsp" },
+        { "name": "Cream", "quantity": "100ml" }
+      ],
+      "toppings": "Choco Chips"
+    },
+    {
+      "id": 2,
+      "name": "Chocolate Blast",
+      "price": 100,
+      "flavor": "Chocolate",
+      "image": "https://images.unsplash.com/photo-1674595605055-fa617cb4f8d7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Sugar", "quantity": "60g" },
+        { "name": "Cocoa Powder", "quantity": "2 tbsp" },
+        { "name": "Chocolate Chips", "quantity": "30g" }
+      ],
+      "toppings": "Brownie Crumbs"
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Swirl",
+      "price": 90,
+      "flavor": "Strawberry",
+      "image": "https://images.unsplash.com/photo-1724805053611-54c999f9c70c?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Strawberry Puree", "quantity": "80g" },
+        { "name": "Sugar", "quantity": "40g" },
+        { "name": "Cream", "quantity": "100ml" }
+      ],
+      "toppings": "Strawberry Slices"
+    },
+    {
+      "id": 4,
+      "name": "Mango Mania",
+      "price": 95,
+      "flavor": "Mango",
+      "image": "https://images.unsplash.com/photo-1663904458920-f153c162fa79?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Mango Pulp", "quantity": "100g" },
+        { "name": "Sugar", "quantity": "50g" },
+        { "name": "Cream", "quantity": "90ml" }
+      ],
+      "toppings": "Mango Chunks"
+    },
+    {
+      "id": 5,
+      "name": "Butterscotch Crunch",
+      "price": 110,
+      "flavor": "Butterscotch",
+      "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=1416&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Sugar", "quantity": "55g" },
+        { "name": "Butterscotch Chips", "quantity": "40g" },
+        { "name": "Caramel", "quantity": "30ml" }
+      ],
+      "toppings": "Toffee Bits"
+    },
+    {
+      "id": 6,
+      "name": "Blueberry Bliss",
+      "price": 105,
+      "flavor": "Blueberry",
+      "image": "https://images.unsplash.com/photo-1684135347630-82c37ed5c7b8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "ingredients": [
+        { "name": "Milk", "quantity": "200ml" },
+        { "name": "Blueberry Puree", "quantity": "75g" },
+        { "name": "Sugar", "quantity": "45g" },
+        { "name": "Cream", "quantity": "95ml" }
+      ],
+      "toppings": "Whipped Cream"
+    }
+  ]
 }

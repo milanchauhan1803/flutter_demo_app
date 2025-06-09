@@ -20,6 +20,7 @@ class IceCream {
   final String flavor;
   final String image;
   final List<Ingredient> ingredients;
+  final String toppings; // ✅ Added
 
   IceCream({
     required this.id,
@@ -28,6 +29,7 @@ class IceCream {
     required this.flavor,
     required this.image,
     required this.ingredients,
+    required this.toppings, // ✅ Added
   });
 
   factory IceCream.fromJson(Map<String, dynamic> json) {
@@ -41,6 +43,7 @@ class IceCream {
           (json['ingredients'] as List)
               .map((e) => Ingredient.fromJson(e))
               .toList(),
+      toppings: json['toppings'], // ✅ Added
     );
   }
 
@@ -52,6 +55,7 @@ class IceCream {
       'flavor': flavor,
       'image': image,
       'ingredients': ingredients.map((e) => e.toJson()).toList(),
+      'toppings': toppings, // ✅ Added
     };
   }
 }
